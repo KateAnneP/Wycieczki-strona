@@ -1,0 +1,175 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+	margin: 0 auto;
+    --color_panelu: #9D93AC;
+    --color_linkow: #6d5d85;
+	--color_tla: #e8d6c0;
+	--color_czcionki: #000;
+	--base_size: 16px;
+}
+
+img {
+    height: 50px;
+}
+
+.main {
+    text-align: center;
+}
+
+.przycisk {
+    background-color: var(--color_panelu);
+    padding: 15px 15px;
+    
+}
+
+.przycisk:hover {
+    background-color: #c9aff0;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.linki {
+    color: var(--color_czcionki);
+}
+
+.linki2, .linki2:link, .linki2:visited {
+    color: var(--color_czcionki);
+}
+
+.linki:hover, .linki:link, .linki:visited {
+    color: var(--color_czcionki);
+}
+
+.linki2:hover {
+    color: var(--color_panelu);
+}
+
+p {
+    margin: 5px;
+}
+
+.stopka {
+    background-color: #eee;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.main_c {
+    border-right: 1px solid grey;
+    padding: 20px;
+}
+
+.main_c:last-child {
+    border-right: 0px;
+    padding: 20px;
+}
+
+
+.wycieczka {
+    text-align: left;
+    padding: 20px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 10px;
+}
+
+.fot {
+    width:  300px;
+    border:  2px solid var(--color_tla);
+    border-radius: 2px;
+    float: left;
+    margin: 30px;
+}
+
+.zarezerwuj {
+    text-align: right;
+}
+
+.rezerw_form {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.pomoc {
+    padding: 20px;
+    text-align: left;
+}
+
+.logo {
+    width: 300px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1028px) {
+    .main_c {
+    border-bottom: 1px solid grey;
+    padding: 20px;
+    }
+
+    .main_c:last-child {
+        border-bottom: 0px;
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+	.container {
+		width: 1024px;
+		margin: 0 auto;
+	}
+}
